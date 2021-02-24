@@ -29,6 +29,6 @@ echo
 echo "Configuring Upstream..."
 
 git remote add upstream "https://bitbucket.org/te-nlr-2103/java-blue-main"
-git config branch.master.mergeOptions "--no-edit"
+git config branch.main.mergeOptions "--no-edit"
 
 echo "Done."
