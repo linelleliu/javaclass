@@ -8,40 +8,40 @@ public class Lecture {
 		1. Create a variable to hold an int and call it numberOfExercises.
 			Then set it to 26.
 		*/
-
-		//System.out.println(numberOfExercises);
+		int numberOfExercises = 26;
+		System.out.println(numberOfExercises);
 
 		/*
 		2. Create a variable to hold a double and call it half.
 			Set it to 0.5.
 		*/
-
-		//System.out.println(half);
+		double half = 0.5;
+		System.out.println(half);
 
 		/*
 		3. Create a variable to hold a String and call it name.
 			Set it to "TechElevator".
 		*/
-
-		//System.out.println(name);
+		String name = "TechElevator";
+		System.out.println(name);
 
 		/*
 		4. Create a variable called seasonsOfFirefly and set it to 1.
 		*/
-
-		//System.out.println(seasonsOfFirefly);
+		int seasonsOfFirefly = 1;
+		System.out.println(seasonsOfFirefly);
 
 		/*
 		5. Create a variable called myFavoriteLanguage and set it to "Java".
 		*/
-
-		//System.out.println(myFavoriteLanguage);
+		String myFavoriteLanguage = "Java";
+		System.out.println(myFavoriteLanguage);
 
 		/*
 		6. Create a variable called pi and set it to 3.1416.
 		*/
-
-		//System.out.println(pi);
+		double pi = 3.1416;
+		System.out.println(pi);
 
 		/*
 		7. Create and set a variable that holds your name.
@@ -59,7 +59,8 @@ public class Lecture {
 		/*
 		10. Create an int variable that holds the difference between 121 and 27.
 		*/
-
+		int difference = 121 - 27;
+		System.out.println(difference);
 		/*
 		11. Create a double that holds the addition of 12.3 and 32.1.
 		*/
@@ -93,15 +94,17 @@ public class Lecture {
 		/*
 		18. What is 4.4 divided by 2.2?
 		*/
-
+		double result = 4.4/2.2;
+		System.out.println(result);
 		/*
 		19. What is 5.4 divided by 2?
 		*/
-
+		double result19 = 5.4/2;
 		/*
 		20. What is 5 divided by 2?
 		*/
-
+		int result20 = 5/2;
+		System.out.println(result20);
 		/*
 		21. What is 5.0 divided by 2?
 		*/
@@ -113,7 +116,8 @@ public class Lecture {
 		/*
 		23. If I divide 5 by 2, what's my remainder?
 		*/
-
+		int result23 = 5%2;
+		System.out.println(result23);
 		/*
 		24. What is 1,000,000,000 * 3?
 		*/
