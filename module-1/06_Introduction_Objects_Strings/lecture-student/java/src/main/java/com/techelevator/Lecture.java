@@ -1,8 +1,18 @@
 package com.techelevator;
 
+import java.util.Locale;
+
 public class Lecture {
 
 	public static void main(String[] args) {
+		/*
+		VIN Numbers:
+		1GNSCBE09ER147271
+		1FAHP3F24CL127125
+		3GNEC13T73G142264
+		1MEFM50U85A612817
+*/
+
 
 		System.out.println("************************************");
 		System.out.println("****** MAKING A STRING OBJECT ******");
@@ -22,6 +32,41 @@ public class Lecture {
 		System.out.println("******************************");
 		System.out.println();
 
+		String vin = "1GNSCBE09ER147271 ";
+		char manufacturer = vin.charAt(1);
+		System.out.println(manufacturer);
+		char countryCode = vin.charAt(0);
+
+		// If the car is made in the USA, and it's a ford printout FORD-USA
+		if (countryCode == '1' && manufacturer == 'F') {
+			System.out.println("FORD-USA");
+		} else {
+			System.out.println("OTHER");
+		}
+
+		int lengthOfVin = vin.length();
+		System.out.println("The length of a VIN number is: " + lengthOfVin);
+
+		int vinClean = vin.trim().length();
+		System.out.println("The cleaned up VIN number has a length of " + vinClean);
+
+		int position = vin.indexOf("YZZ");
+		System.out.println(position);
+
+		String carFeatures = vin.substring(3,8);
+		System.out.println(carFeatures);
+
+		String lowerCaseVin = vin.toLowerCase();
+		System.out.println(lowerCaseVin);
+
+		boolean hasMyLetters = vin.contains("934");
+		System.out.println(hasMyLetters);
+
+		String bar = "AAA ";
+		bar = bar.trim();
+		System.out.println("Length of bar: " + bar.length());
+		bar = bar.toLowerCase();
+		System.out.println("The value of bar " + bar);
 
 		/* Other commonly used methods:
 		 *
@@ -42,7 +87,11 @@ public class Lecture {
 		System.out.println("**********************");
 		System.out.println();
 
+		String hello1 = "POTATO";
+		String hello2 = new String("POTATO");
 
+		char [] charArray = {'P', 'O', 'T', 'A', 'T', 'O'};
+		String hello4 = new String(charArray);
 
 		/* Double equals will compare to see if the two variables, hello1 and
 		 * hello2 point to the same object in memory. Are they the same object? */
