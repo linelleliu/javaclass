@@ -114,5 +114,16 @@ public class Lecture {
 			System.out.println(hello1 + " is not equal to " + hello2);
 		}
 
+		String str = "a";
+//		if (str.length() >= 2) {
+//			String firstTwo = str.substring(0, 2);
+//			return firstTwo;
+//		} else if (str.length() == 1) {
+//			char oneString = str.charAt(0);
+//			System.out.println(oneString);
+//
+//		} else {
+//			return "";
+//		}
 	}
 }
