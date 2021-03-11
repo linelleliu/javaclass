@@ -1,6 +1,7 @@
 package com.techelevator;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Exercises {
@@ -34,7 +35,35 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		return null;
+		Map<String, String> animals = new HashMap<String, String>();
+		animals.put("Rhino", "Crash");
+		animals.put("Giraffe", "Tower");
+		animals.put("Elephant", "Herd");
+		animals.put("Lion", "Pride");
+		animals.put("Crow", "Murder");
+		animals.put("Pigeon", "Kit");
+		animals.put("Flamingo", "Pat");
+		animals.put("Deer", "Herd");
+		animals.put("Dog", "Pack");
+		animals.put("Crocodile", "Float");
+
+//		System.out.println("value of itemNumber being passed in: " + animalName);
+
+		if (animalName == "" || animalName == null) {
+			return "unknown";
+		}
+
+		String upperCaseFirstLetter = animalName.substring(0, 1).toUpperCase() + animalName.substring(1).toLowerCase();
+		boolean doesItemExit = animals.containsKey(upperCaseFirstLetter);
+//		System.out.println(doesItemExit);
+		if (doesItemExit) {
+			String name = animals.get(upperCaseFirstLetter);
+//			System.out.println(name);
+			return name;
+
+		} else {
+			return "unknown";
+		}
 	}
 
 	/*
@@ -60,8 +89,28 @@ public class Exercises {
 	 *
 	 */
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+		System.out.println("value of itemNumber being passed in: " + itemNumber);
+		Map<String, Double> sales = new HashMap<String, Double>();
+		sales.put("KITCHEN4001", 0.20);
+		sales.put("GARAGE1070", 0.15);
+		sales.put("LIVINGROOM", 0.10);
+		sales.put("KITCHEN6073", 0.40);
+		sales.put("BEDROOM3434", 0.60);
+		sales.put("BATH0073", 0.15);
+
+		if (itemNumber == "" || itemNumber == null) {
+			return 0.0;
+		}
+		boolean doesItemExist = sales.containsKey(itemNumber.toUpperCase());
+		System.out.println(doesItemExist);
+		if(doesItemExist) {
+			double discount = sales.get(itemNumber.toUpperCase());
+			return discount;
+		} else {
+			return 0.0;
+		}
 	}
+
 
 	/*
 	 * Modify and return the given Map as follows: if "Peter" has more than 0 money, transfer half of it to "Paul",
@@ -74,6 +123,7 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
+
 		return null;
 	}
 
