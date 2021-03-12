@@ -271,7 +271,19 @@ public class Exercises {
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
 			Map<String, Integer> remoteWarehouse) {
 
-		
+		for (String key: remoteWarehouse.keySet()){
+//			System.out.println("what is key:  " + key);
+			if (mainWarehouse.containsKey(key)){
+				int main = mainWarehouse.get(key);
+//				System.out.println("main: " + main);
+				int remote = remoteWarehouse.get(key);
+//				System.out.println("remote: " + remote);
+				mainWarehouse.put(key,main+remote);
+			} else {
+				int remote = remoteWarehouse.get(key);
+				mainWarehouse.put(key,remote);
+			}
+		}
 
 
 		return mainWarehouse;
