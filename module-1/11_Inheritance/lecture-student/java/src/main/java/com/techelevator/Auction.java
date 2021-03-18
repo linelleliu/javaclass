@@ -30,7 +30,8 @@ public class Auction {
 	}
 
 	public List<Bid> getAllBids() {
-		return new ArrayList<>(allBids);
+//		return new ArrayList<>(allBids);
+		return this.allBids;
 	}
 
 	public String getItemForSale() {
